@@ -1,0 +1,9 @@
+[user]
+	email = antoine97.martin@gmail.com
+	name = Antoine Martin
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
+[core]
+	editor = vim
