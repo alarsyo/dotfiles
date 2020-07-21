@@ -1,0 +1,3 @@
+#+title: Configuration files
+
+These dotfiles are managed with stow.
