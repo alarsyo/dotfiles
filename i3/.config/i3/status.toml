@@ -1,0 +1,75 @@
+[theme]
+name = "solarized-dark"
+[theme.overrides]
+idle_bg = "#20201d"
+idle_fg = "#a6a28c"
+info_bg = "#1fad83"
+info_fg = "#20201d"
+good_bg = "#60ac39"
+good_fg = "#20201d"
+warning_bg = "#ae9513"
+warning_fg = "#20201d"
+critical_bg = "#d73737"
+critical_fg = "#20201d"
+
+[icons]
+name = "awesome"
+
+[[block]]
+block = "pacman"
+
+[[block]]
+block = "disk_space"
+path = "/"
+alias = "/"
+info_type = "available"
+unit = "GB"
+interval = 20
+warning = 20.0
+alert = 10.0
+
+[[block]]
+block = "memory"
+display_type = "memory"
+clickable = false
+format_mem = "{Mup}%"
+format_swap = "{SUp}%"
+
+[[block]]
+block = "cpu"
+interval = 1
+
+[[block]]
+block = "temperature"
+collapsed = false
+interval = 10
+format = "{max}°"
+
+[[block]]
+block = "load"
+interval = 1
+format = "{1m}"
+
+[[block]]
+block = "networkmanager"
+primary_only = true
+on_click = "nm-applet"
+
+[[block]]
+block = "bluetooth"
+mac = "38:18:4C:4B:B0:A8"
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "battery"
+interval = 10
+format = "{percentage}% {time}"
+driver = "upower"
+device = "DisplayDevice"
+
+[[block]]
+block = "time"
+interval = 5
+format = "%a %d/%m %T"
