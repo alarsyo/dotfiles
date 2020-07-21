@@ -13,7 +13,7 @@ critical_bg = "#d73737"
 critical_fg = "#20201d"
 
 [icons]
-name = "awesome"
+name = "awesome5"
 
 [[block]]
 block = "pacman"

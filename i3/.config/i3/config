@@ -197,7 +197,7 @@ set $darkgray #1d2021
 
 #start of bar section
 bar {
-    font pango:Hack, FontAwesome 10
+    font pango:Hack 10
     position top
     status_command i3status-rs ~/.config/i3/status.toml
     colors {
