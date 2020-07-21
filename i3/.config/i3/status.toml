@@ -56,10 +56,6 @@ primary_only = true
 on_click = "nm-applet"
 
 [[block]]
-block = "bluetooth"
-mac = "38:18:4C:4B:B0:A8"
-
-[[block]]
 block = "sound"
 
 [[block]]
