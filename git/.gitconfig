@@ -7,3 +7,5 @@
 	enabled = true
 [core]
 	editor = vim
+[commit]
+	verbose = true
