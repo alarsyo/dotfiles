@@ -14,3 +14,12 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
+[includeIf "gitdir:~/work/prologin/"]
+	path = .gitconfig-prologin
+[includeIf "gitdir:~/work/lrde/"]
+	path = .gitconfig-lrde
+[includeIf "gitdir:~/work/assistants/"]
+	path = .gitconfig-epita
+[includeIf "gitdir:~/work/image/"]
+	path = .gitconfig-epita
