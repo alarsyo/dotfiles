@@ -23,3 +23,5 @@
 	path = .gitconfig-epita
 [includeIf "gitdir:~/work/image/"]
 	path = .gitconfig-epita
+[alias]
+	push-wip = push -o ci.skip
