@@ -257,5 +257,4 @@ bindsym $mod+l exec --no-startup-id betterlockscreen --lock
 
 bindsym $mod+Shift+d exec --no-startup-id bash ~/.local/bin/dock.sh
 
-gaps inner 5
-default_border none
+default_border pixel
