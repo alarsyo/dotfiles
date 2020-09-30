@@ -44,6 +44,7 @@ block = "temperature"
 collapsed = false
 interval = 10
 format = "{max}°"
+chip = "coretemp-isa-*"
 
 [[block]]
 block = "load"
