@@ -27,3 +27,6 @@
 	push-wip = push -o ci.skip
 	push-merge = push -o merge_request.create -o merge_request.merge_when_pipeline_succeeds -o merge_request.remove_source_branch
 	push-mr = push -o merge_request.create -o merge_request.remove_source_branch
+
+[absorb]
+	maxStack = 50
