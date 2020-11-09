@@ -24,3 +24,6 @@ bind ;c hint -Jc [class*="expand"],[class="togg"],[class="comment_folder"]
 
 " Use emacs as editor
 set editorcmd emacsclient -c
+
+" copy all the things
+set yankto both
