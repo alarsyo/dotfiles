@@ -18,3 +18,6 @@ set findcase smart
 
 " New reddit is bad
 autocmd DocStart ^http(s?)://www.reddit.com js tri.excmds.urlmodify("-t", "www", "old")
+
+" Use emacs as editor
+set editorcmd emacsclient -c
