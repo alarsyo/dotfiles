@@ -3,5 +3,18 @@
 " as an enforced single point of truth for Tridactyl's configuration.
 sanitize tridactyllocal tridactylsync
 
+" Ctrl-F should use the browser's native 'find' functionality.
+unbind <C-f>
+
+" Tridactyl has an incomplete find mode
+bind / fillcmdline find
+bind ? fillcmdline find -?
+bind n findnext 1
+bind N findnext -1
+bind ,<Space> nohlsearch
+
+" case insensitive if lowercase, case sensitive if using some uppercase letters
+set findcase smart
+
 " New reddit is bad
 autocmd DocStart ^http(s?)://www.reddit.com js tri.excmds.urlmodify("-t", "www", "old")
