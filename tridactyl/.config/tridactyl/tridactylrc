@@ -27,3 +27,5 @@ set editorcmd emacsclient -c
 
 " copy all the things
 set yankto both
+
+blacklistadd netflix.com
