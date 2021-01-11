@@ -32,3 +32,5 @@
 
 [absorb]
 	maxStack = 50
+[init]
+	defaultBranch = main
