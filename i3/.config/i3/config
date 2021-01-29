@@ -237,6 +237,7 @@ assign [class="Slack"] $ws10
 
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
 exec --no-startup-id picom
+exec --no-startup-id dunst
 
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
