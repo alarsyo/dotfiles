@@ -1,2 +1,3 @@
 rofi.theme: /usr/share/rofi/themes/gruvbox-dark.rasi
 rofi.terminal: alacritty
+rofi.ssh-client: mosh
