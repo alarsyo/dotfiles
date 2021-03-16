@@ -1,0 +1,5 @@
+configuration {
+	terminal: "alacritty";
+	ssh-client: "mosh";
+	theme: "/usr/share/rofi/themes/gruvbox-dark.rasi";
+}
