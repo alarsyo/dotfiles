@@ -1,0 +1,55 @@
+IMAPAccount alarsyo
+Host imap.migadu.com
+User antoine@alarsyo.net
+PassCmd "bw get password 64163c57-727b-42ac-9e22-38eaa2f29ce4"
+SSLType IMAPS
+
+IMAPStore alarsyo-remote
+Account alarsyo
+
+MaildirStore alarsyo-local
+Path ~/.mail/alarsyo.net/
+Inbox ~/.mail/alarsyo.net/Inbox
+
+## Connections
+Channel alarsyo-inbox
+Master :alarsyo-remote:"INBOX"
+Slave :alarsyo-local:"Inbox"
+Create Slave
+Expunge Slave
+SyncState *
+
+Channel alarsyo-archive
+Master :alarsyo-remote:"Archive"
+Slave :alarsyo-local:"Archive"
+Create Slave
+Expunge Slave
+SyncState *
+
+Channel alarsyo-drafts
+Master :alarsyo-remote:"Drafts"
+Slave :alarsyo-local:"Drafts"
+Create Slave
+Expunge Slave
+SyncState *
+
+Channel alarsyo-sent
+Master :alarsyo-remote:"Sent"
+Slave :alarsyo-local:"Sent"
+Create Slave
+Expunge Slave
+SyncState *
+
+Channel alarsyo-trash
+Master :alarsyo-remote:"Trash"
+Slave :alarsyo-local:"Trash"
+Create Slave
+Expunge Slave
+SyncState *
+
+Group alarsyo
+Channel alarsyo-inbox
+Channel alarsyo-archive
+Channel alarsyo-drafts
+Channel alarsyo-sent
+Channel alarsyo-trash
