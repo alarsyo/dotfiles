@@ -13,38 +13,38 @@ Inbox ~/.mail/alarsyo.net/Inbox
 
 ## Connections
 Channel alarsyo-inbox
-Master :alarsyo-remote:"INBOX"
-Slave :alarsyo-local:"Inbox"
-Create Slave
-Expunge Slave
+Far :alarsyo-remote:"INBOX"
+Near :alarsyo-local:"Inbox"
+Create Near
+Expunge Near
 SyncState *
 
 Channel alarsyo-archive
-Master :alarsyo-remote:"Archive"
-Slave :alarsyo-local:"Archive"
-Create Slave
-Expunge Slave
+Far :alarsyo-remote:"Archive"
+Near :alarsyo-local:"Archive"
+Create Near
+Expunge Near
 SyncState *
 
 Channel alarsyo-drafts
-Master :alarsyo-remote:"Drafts"
-Slave :alarsyo-local:"Drafts"
-Create Slave
-Expunge Slave
+Far :alarsyo-remote:"Drafts"
+Near :alarsyo-local:"Drafts"
+Create Near
+Expunge Near
 SyncState *
 
 Channel alarsyo-sent
-Master :alarsyo-remote:"Sent"
-Slave :alarsyo-local:"Sent"
-Create Slave
-Expunge Slave
+Far :alarsyo-remote:"Sent"
+Near :alarsyo-local:"Sent"
+Create Near
+Expunge Near
 SyncState *
 
 Channel alarsyo-trash
-Master :alarsyo-remote:"Trash"
-Slave :alarsyo-local:"Trash"
-Create Slave
-Expunge Slave
+Far :alarsyo-remote:"Trash"
+Near :alarsyo-local:"Trash"
+Create Near
+Expunge Near
 SyncState *
 
 Group alarsyo
