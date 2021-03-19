@@ -53,3 +53,51 @@ Channel alarsyo-archive
 Channel alarsyo-drafts
 Channel alarsyo-sent
 Channel alarsyo-trash
+
+IMAPAccount lrde
+Host imap.lrde.epita.fr
+User amartin
+PassCmd "bw get password ad303f49-66a0-464d-92db-e10d6784eeb1"
+SSLType IMAPS
+
+IMAPStore lrde-remote
+Account lrde
+
+MaildirStore lrde-local
+Path ~/.mail/lrde/
+Inbox ~/.mail/lrde/Inbox
+
+## Connections
+Channel lrde-inbox
+Far :lrde-remote:"INBOX"
+Near :lrde-local:"Inbox"
+Create Near
+Expunge Near
+SyncState *
+
+Channel lrde-drafts
+Far :lrde-remote:"Drafts"
+Near :lrde-local:"Drafts"
+Create Near
+Expunge Near
+SyncState *
+
+Channel lrde-sent
+Far :lrde-remote:"Sent"
+Near :lrde-local:"Sent"
+Create Near
+Expunge Near
+SyncState *
+
+Channel lrde-trash
+Far :lrde-remote:"Trash"
+Near :lrde-local:"Trash"
+Create Near
+Expunge Near
+SyncState *
+
+Group lrde
+Channel lrde-inbox
+Channel lrde-drafts
+Channel lrde-sent
+Channel lrde-trash
